@@ -6,20 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="30dp"
-    tools:context=".MainActivity">
+    tools:context=".AnimalListActivity">
 
-    <Button
-        android:id="@+id/btn_new"
+    <ListView
+        android:id="@+id/list_animales"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/text_new"/>
-
-    <Button
-        android:id="@+id/btn_list"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-
-        android:text="@string/text_list"/>
+        android:layout_height="match_parent" />
 
 </LinearLayout>

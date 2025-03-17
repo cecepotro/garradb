@@ -14,7 +14,7 @@ class GarraDB(
 
     override fun onCreate(sqliteDatabase: SQLiteDatabase) {
         try {
-            sqliteDatabase.execSQL("CREATE TABLE Animal (id INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT)")
+            sqliteDatabase.execSQL("CREATE TABLE Animal (id INTEGER PRIMARY KEY AUTOINCREMENT, nombre TEXT, especie TEXT, habilidades TEXT)")
         } catch (ex: Exception){
             Log.e("Error al crear la base de datos", ex.message.toString())
         }
